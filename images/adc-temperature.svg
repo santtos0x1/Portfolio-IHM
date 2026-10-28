@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title>RP2040 ADC Temperature HAL: esquema simplificado</title>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#9b9892" stroke-width="1"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#4a4a4a" stroke-width="1">
+    <rect x="10" y="20" width="120" height="76"/>
+    <rect x="165" y="20" width="120" height="76"/>
+    <rect x="320" y="20" width="120" height="76"/>
+    <rect x="475" y="20" width="120" height="76"/>
+    <rect x="10" y="136" width="330" height="84"/>
+  </g>
+  <g stroke="#9b9892" stroke-width="1" marker-end="url(#seta)">
+    <line x1="134" y1="58" x2="161" y2="58"/>
+    <line x1="289" y1="58" x2="316" y2="58"/>
+    <line x1="444" y1="58" x2="471" y2="58"/>
+  </g>
+  <line x1="225" y1="96" x2="225" y2="136" stroke="#9b9892" stroke-width="1"/>
+  <g text-anchor="middle">
+    <text x="70" y="52" fill="#e8e6e1" font-size="15" font-weight="500">ADC</text>
+    <text x="70" y="72" fill="#9b9892" font-size="12">interno do</text>
+    <text x="70" y="87" fill="#9b9892" font-size="12">RP2040</text>
+
+    <text x="225" y="52" fill="#e8e6e1" font-size="15" font-weight="500">Aquisição</text>
+    <text x="225" y="72" fill="#9b9892" font-size="12">registradores</text>
+    <text x="225" y="87" fill="#9b9892" font-size="12">diretos</text>
+
+    <text x="380" y="52" fill="#e8e6e1" font-size="15" font-weight="500">Ponto fixo</text>
+    <text x="380" y="72" fill="#9b9892" font-size="12">sem operações</text>
+    <text x="380" y="87" fill="#9b9892" font-size="12">de float</text>
+
+    <text x="535" y="52" fill="#e8e6e1" font-size="15" font-weight="500">Resultado</text>
+    <text x="535" y="72" fill="#9b9892" font-size="12">milli-Celsius</text>
+    <text x="535" y="87" fill="#9b9892" font-size="12">25000 = 25 °C</text>
+  </g>
+  <text x="26" y="162" fill="#e8e6e1" font-size="14" font-weight="500">HAL bare metal</text>
+  <text x="26" y="184" fill="#9b9892" font-size="12.5">inicialização separada da aquisição</text>
+  <text x="26" y="203" fill="#9b9892" font-size="12.5">sem dependência de SDKs externos</text>
+</svg>

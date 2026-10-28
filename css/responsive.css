@@ -1,0 +1,49 @@
+@media (min-width: 40rem) {
+  html {
+    scroll-padding-top: calc(var(--header-height) + var(--space-4));
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .facts__row {
+    grid-template-columns: 10rem 1fr;
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 48rem) {
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  .section-layout {
+    grid-template-columns: var(--label-width) 1fr;
+    gap: var(--space-6);
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .hero__figure {
+    width: 11rem;
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

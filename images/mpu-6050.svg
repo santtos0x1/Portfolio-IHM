@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title>MPU-6050 Gyroscope Driver: esquema simplificado</title>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#9b9892" stroke-width="1"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#4a4a4a" stroke-width="1">
+    <rect x="15" y="20" width="150" height="76"/>
+    <rect x="225" y="20" width="150" height="76"/>
+    <rect x="435" y="20" width="150" height="76"/>
+    <rect x="15" y="136" width="570" height="84"/>
+  </g>
+  <g stroke="#9b9892" stroke-width="1" marker-start="url(#seta)" marker-end="url(#seta)">
+    <line x1="170" y1="58" x2="220" y2="58"/>
+    <line x1="380" y1="58" x2="430" y2="58"/>
+  </g>
+  <line x1="300" y1="96" x2="300" y2="136" stroke="#9b9892" stroke-width="1"/>
+  <g text-anchor="middle">
+    <text x="90" y="52" fill="#e8e6e1" font-size="15" font-weight="500">MPU-6050</text>
+    <text x="90" y="72" fill="#9b9892" font-size="12.5">sensor</text>
+    <text x="90" y="87" fill="#9b9892" font-size="12.5">3 eixos</text>
+
+    <text x="300" y="52" fill="#e8e6e1" font-size="15" font-weight="500">I2C0</text>
+    <text x="300" y="72" fill="#9b9892" font-size="12.5">Fast Mode</text>
+    <text x="300" y="87" fill="#9b9892" font-size="12.5">400 kHz</text>
+
+    <text x="510" y="52" fill="#e8e6e1" font-size="15" font-weight="500">RP2040</text>
+    <text x="510" y="72" fill="#9b9892" font-size="12.5">registradores</text>
+    <text x="510" y="87" fill="#9b9892" font-size="12.5">ponteiros volatile</text>
+
+    <text x="300" y="162" fill="#e8e6e1" font-size="14" font-weight="500">Burst Read</text>
+    <text x="300" y="184" fill="#9b9892" font-size="12.5">3 eixos capturados de forma sincronizada em uma única transação</text>
+    <text x="300" y="203" fill="#9b9892" font-size="12.5">flag RFNE do IC_STATUS · sem interrupções nem DMA</text>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title>NS Monitor: esquema simplificado</title>
+  <g fill="none" stroke="#4a4a4a" stroke-width="1">
+    <rect x="10" y="10" width="580" height="220"/>
+    <rect x="24" y="44" width="170" height="70"/>
+    <rect x="215" y="44" width="170" height="70"/>
+    <rect x="406" y="44" width="170" height="70"/>
+    <rect x="24" y="150" width="361" height="58"/>
+    <rect x="406" y="150" width="170" height="58"/>
+  </g>
+  <g stroke="#9b9892" stroke-width="1">
+    <line x1="109" y1="114" x2="109" y2="150"/>
+    <line x1="300" y1="114" x2="300" y2="150"/>
+    <line x1="491" y1="114" x2="491" y2="150"/>
+  </g>
+  <text x="24" y="32" fill="#9b9892" font-size="12.5">ESP32 · tarefas FreeRTOS</text>
+  <g text-anchor="middle">
+    <text x="109" y="70" fill="#e8e6e1" font-size="15" font-weight="500">ICMP</text>
+    <text x="109" y="88" fill="#9b9892" font-size="12.5">requisições em</text>
+    <text x="109" y="103" fill="#9b9892" font-size="12.5">segundo plano</text>
+
+    <text x="300" y="70" fill="#e8e6e1" font-size="15" font-weight="500">MQTT</text>
+    <text x="300" y="88" fill="#9b9892" font-size="12.5">comunicação sem</text>
+    <text x="300" y="103" fill="#9b9892" font-size="12.5">bloquear o fluxo</text>
+
+    <text x="491" y="70" fill="#e8e6e1" font-size="15" font-weight="500">FSM</text>
+    <text x="491" y="88" fill="#9b9892" font-size="12.5">controle da</text>
+    <text x="491" y="103" fill="#9b9892" font-size="12.5">conectividade</text>
+
+    <text x="204" y="173" fill="#e8e6e1" font-size="15" font-weight="500">LwIP</text>
+    <text x="204" y="191" fill="#9b9892" font-size="12.5">pilha de rede</text>
+
+    <text x="491" y="173" fill="#e8e6e1" font-size="15" font-weight="500">NVS</text>
+    <text x="491" y="191" fill="#9b9892" font-size="12.5">recuperação automática</text>
+  </g>
+</svg>
